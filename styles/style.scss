@@ -1,0 +1,891 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    font-family: "Titillium Web";
+    color: #031f4b;
+    font-weight: bold;
+  }
+
+  p,
+  a,
+  li {
+    font-family: "Montserrat";
+    color: #031f4b;
+    font-weight: normal;
+  }
+}
+
+// MOBILE VERSION
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  // Header
+  header {
+    background-image: linear-gradient(to bottom, (#035b96, #04396c));
+    height: 120vh;
+
+    // Navbar
+
+    nav {
+      width: 100%;
+      height: 100px;
+      margin-bottom: 20px;
+
+      .navbar-brand {
+        margin-right: 190px;
+      }
+
+      .navbar-toggler {
+        .navbar-toggler-icon {
+          background-image: url("../asset/icon/Menu Icon.png");
+          background-size: contain;
+        }
+      }
+
+      .navbar-collapse {
+        transition: 0.5s;
+
+        .navbar-nav {
+          margin-top: 10px;
+          position: absolute;
+          left: 0;
+          right: 0;
+          padding: 15px;
+          z-index: 99;
+          background-color: #035b96;
+          border: 2px solid white;
+          border-radius: 10px;
+        }
+
+        a.nav-menu {
+          margin-left: (190px - 70px);
+
+          .hamburger {
+            display: none;
+          }
+        }
+
+        a.nav-item {
+          color: white !important;
+          font-weight: normal;
+          margin-right: 70px;
+        }
+
+        a.nav-item.active {
+          font-weight: bold;
+        }
+      }
+    }
+
+    // akhir navbar
+
+    // Jumbotron
+
+    .jumbotron.one {
+      background-color: transparent;
+
+      h1,
+      p,
+      button {
+        text-shadow: 1px 1px 10px rgba($color: #000000, $alpha: 0.6);
+        color: white;
+        position: relative;
+        z-index: 1;
+      }
+
+      p {
+        font-size: 18px;
+        line-height: 25px;
+        margin-top: 20px;
+      }
+
+      h1 {
+        font-size: 60px;
+        font-weight: bold;
+        line-height: 70px;
+      }
+
+      button {
+        width: 150px;
+        height: 40px;
+        border-radius: 20px;
+        margin-top: 20px;
+        margin-left: 15%;
+
+        a {
+          color: white;
+          text-decoration: none;
+          font-weight: bold;
+          font-size: 15px;
+        }
+      }
+
+      .hero-image {
+        position: relative;
+        margin-top: -400px;
+
+        img {
+          display: none;
+        }
+      }
+    }
+
+    // akhir jumbotron
+
+    // Info Box
+    section .container {
+      width: 330px;
+      background-color: white;
+      border-radius: 20px;
+      box-shadow: 8px 8px 10px rgba($color: #000000, $alpha: 0.5);
+      position: relative;
+      z-index: 1;
+      top: 400px;
+
+      .information-item {
+        padding: 20px;
+
+        .available,
+        .members,
+        .sold {
+          display: flex;
+          margin-top: 30px;
+
+          img {
+            width: 80px;
+            height: 80px;
+            margin-right: auto;
+          }
+
+          h1 {
+            font-size: 50px;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+
+    // akhir info box
+  }
+
+  // akhir header
+
+  // Main
+  main .container {
+    width: 90%;
+    box-shadow: 10px 10px 40px rgba($color: #000000, $alpha: 0.5);
+    padding-top: 250px;
+    height: 900vh;
+
+    //   Info 1
+    #info1 {
+      margin-top: 200px;
+
+      h1 {
+        font-weight: bold;
+        font-size: 40px;
+        line-height: 45px;
+        text-align: center;
+      }
+    }
+
+    .carousel.slide {
+      margin-top: 40px;
+      height: 900px !important;
+
+      .col-lg-6 {
+        margin-top: 0px;
+
+        .text-content {
+          padding: 10px;
+
+          p {
+            font-size: 15px;
+          }
+
+          p.head {
+            font-weight: bold;
+          }
+        }
+      }
+
+      .col-lg-5.offset-1.one img {
+        margin-top: 20px;
+        margin-left: -20px;
+        width: 100%;
+      }
+
+      .col-lg-5.offset-1.two img {
+        margin-top: 20px;
+        margin-left: 25px;
+        width: 80%;
+        height: 400px;
+      }
+
+      .carousel-indicators {
+        img {
+          margin-right: 20px;
+          margin-top: -10px;
+        }
+      }
+    }
+
+    //   akhir info 1
+
+    // Info 2
+    #info2 {
+      margin-top: 200px;
+
+      h1 {
+        font-weight: bold;
+        font-size: 40px;
+        line-height: 45px;
+        text-align: center;
+
+      }
+    }
+
+    .col-lg-4 .card {
+      margin-top: 100px;
+      border: none;
+      margin-left: 15px;
+      width: 400px;
+
+      .card-body {
+        background-color: white;
+        width: 250px;
+        height: 80px;
+        border-radius: 10px;
+        box-shadow: 3px 3px 10px rgba($color: #000000, $alpha: 0.4);
+        margin-left: 75px;
+        margin-top: -40px;
+
+        .card-text {
+          font-size: 18px;
+          line-height: 18px;
+        }
+      }
+    }
+
+    // akhir info 2
+
+    // Testimoni
+    #testimoni {
+      .testimoni {
+        margin-top: 150px;
+        margin-bottom: 0;
+
+        h1 {
+          font-weight: bold;
+          font-size: 40px;
+          line-height: 45px;
+          text-align: center;
+        }
+      }
+
+      img.small-hero {
+        display: none;
+      }
+
+      .card.testimoni {
+        background-color: #031f4b;
+        position: relative;
+        left: -98px;
+        width: 400px;
+
+        .card-body {
+          padding-top: 15%;
+          margin-left: -180px;
+
+          h2,
+          p {
+            color: white;
+            text-align: center;
+          }
+
+          h2 {
+            font-size: 30px;
+            margin-left: 180px;
+          }
+
+          p {
+            margin-left: 180px;
+            font-size: 15px;
+            line-height: 25px;
+          }
+
+          .card-members {
+            width: 400px;
+            height: 100px;
+
+            margin-left: 210px;
+            margin-top: 50px;
+            padding: 20px;
+
+            h5 {
+              font-weight: normal;
+              font-size: 18px;
+              color: white;
+              margin-top: -45px;
+              margin-left: 60px;
+            }
+
+            p {
+              font-size: 13px;
+              margin-left: -150px;
+              margin-top: -10px;
+            }
+          }
+        }
+      }
+    }
+
+    // akhir testimoni
+
+    //   Daftar harga
+    #harga {
+      margin-top: 150px;
+
+      h1 {
+        font-weight: bold;
+        font-size: 40px;
+        line-height: 45px;
+        text-align: center;
+      }
+    }
+
+    #hargaProduk {
+      .col-lg-4 .card {
+        margin-top: 100px;
+        border: none;
+        opacity: 0.75;
+        width: 50%;
+        margin-left: 50px;
+
+        .card-body {
+          background-color: #031f4b;
+          width: 250px;
+          height: 120px;
+          border-radius: 10px;
+          box-shadow: 3px 3px 10px rgba($color: #000000, $alpha: 0.4);
+          margin-left: 50px;
+          margin-top: -40px;
+
+          .card-text {
+            font-size: 18px;
+            line-height: 18px;
+            color: white;
+          }
+
+          .btn {
+            width: 120px;
+            height: 30px;
+            border-radius: 10px;
+            background-color: white;
+            color: #031f4b;
+            font-size: 15px;
+            line-height: 10px;
+          }
+        }
+      }
+
+      .card:hover {
+        opacity: 1;
+        transform: scale(1.02);
+        transition: 0.3s;
+      }
+    }
+
+    // akhir daftar harga
+  }
+
+  // akhir main
+
+  // Footer
+  footer {
+    background-image: linear-gradient(to bottom, (#035b96, #04396c));
+    margin-top: 0px;
+    padding: 30px;
+
+    .about {
+      .col-sm-1 {
+        img {
+          margin-top: 25px;
+          display: block;
+        }
+      }
+
+      .col-sm-6 {
+        p {
+          color: white;
+          font-size: 15px;
+          margin-top: 40px;
+          position: relative;
+          top: -195px;
+          left: 80px;
+        }
+      }
+    }
+
+    .social-media {
+      margin-top: -100px;
+
+      img {
+        margin-right: 40px;
+      }
+    }
+
+    hr {
+      margin-top: 25px;
+      border: 1px solid white;
+    }
+
+    p.copyright {
+      font-size: 15px;
+      color: white;
+      text-align: center;
+      margin-top: 40px;
+    }
+  }
+
+  // akhir footer
+}
+
+// DESKTOP VERSION
+@media (min-width: 768px) {
+  body {
+    height: 700vh;
+  }
+
+  // Header
+  header {
+    background-image: linear-gradient(to bottom, (#035b96, #04396c));
+    height: 135vh;
+
+    // Navbar
+
+    nav {
+      width: 100%;
+      height: 100px;
+      margin-bottom: 20px;
+
+      .navbar-brand {
+        margin-right: 190px;
+      }
+
+      a.nav-menu {
+        margin-left: (190px - 70px);
+
+        .hamburger {
+          float: left;
+        }
+
+        .hamburger div.two {
+          width: 40px;
+          height: 5px;
+          background-color: white;
+          border-radius: 3px;
+          margin-bottom: 4px;
+        }
+
+        .hamburger div.one,
+        .hamburger div.three {
+          width: 50%;
+          height: 5px;
+          background-color: white;
+          border-radius: 3px;
+          margin-bottom: 4px;
+        }
+
+        .hamburger div.one {
+          margin-left: 50%;
+        }
+      }
+
+      a.nav-item {
+        color: white !important;
+        font-weight: normal;
+        margin-right: 70px;
+      }
+
+      a.nav-item.active {
+        font-weight: bold;
+      }
+    }
+
+    // akhir navbar
+
+    // Jumbotron
+
+    .jumbotron.one {
+      background-color: transparent;
+
+      h1,
+      p,
+      button {
+        text-shadow: 1px 1px 10px rgba($color: #000000, $alpha: 0.6);
+        color: white;
+        position: relative;
+        z-index: 1;
+      }
+
+      p {
+        font-size: 27px;
+        line-height: 33px;
+        margin-top: 20px;
+        opacity: 1 !important;
+      }
+
+      h1 {
+        font-size: 80px;
+        font-weight: bold;
+        line-height: 100px;
+      }
+
+      button {
+        width: 200px;
+        height: 50px;
+        border-radius: 20px;
+        margin-top: 20px;
+        margin-left: 35%;
+
+        a {
+          color: white;
+          text-decoration: none;
+          font-weight: bold;
+          font-size: 20px;
+        }
+      }
+
+      .hero-image {
+        position: relative;
+        margin-top: -400px;
+
+        img {
+          position: absolute;
+          top: 100px;
+          left: -45px;
+          opacity: .4;
+        }
+      }
+    }
+
+    // akhir jumbotron
+
+    // Info Box
+    section .container {
+      width: 720px;
+      height: 200px;
+      background-color: white;
+      border-radius: 20px;
+      box-shadow: 8px 8px 10px rgba($color: #000000, $alpha: 0.5);
+      position: relative;
+      z-index: 1;
+      top: 490px;
+
+      .information-item {
+        display: flex;
+        justify-content: space-around;
+
+        .available,
+        .members,
+        .sold {
+          display: flex;
+          margin-top: 50px;
+
+          h1 {
+            font-size: 70px;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+
+    // akhir info box
+  }
+
+  // akhir header
+
+  // Main
+  main .container {
+    height: 600vh;
+    box-shadow: 10px 10px 40px rgba($color: #000000, $alpha: 0.5);
+    padding-top: 250px;
+
+    #info1 {
+
+      //   Info 1
+      h1 {
+        font-weight: bold;
+        font-size: 60px;
+        line-height: 65px;
+        text-align: center;
+      }
+
+      .carousel.slide {
+        margin-top: 70px;
+        height: 650px !important;
+
+        .col-lg-6 {
+          margin-top: 100px;
+
+          .text-content {
+            margin-top: 10%;
+            margin-left: 30px;
+
+            p {
+              font-size: 20px;
+            }
+
+            p.head {
+              font-weight: bold;
+            }
+          }
+        }
+
+        .col-lg-5.offset-1.one img {
+          margin-top: 80px;
+          margin-left: -30px;
+        }
+
+        .col-lg-5.offset-1.two img {
+          margin-top: 80px;
+          margin-left: 80px;
+        }
+
+        .carousel-indicators {
+          img {
+            margin-right: 20px;
+          }
+        }
+      }
+
+      //   akhir info 1
+    }
+
+
+    // Info 2
+    #info2 {
+      margin-top: 200px;
+
+
+      h1 {
+        font-weight: bold;
+        font-size: 60px;
+        line-height: 65px;
+        text-align: center;
+
+      }
+
+      .col-lg-4 .card {
+        margin-top: 100px;
+        border: none;
+        margin-left: 5px;
+
+        .card-body {
+          background-color: white;
+          width: 250px;
+          height: 80px;
+          border-radius: 10px;
+          box-shadow: 3px 3px 10px rgba($color: #000000, $alpha: 0.4);
+          margin-left: 50px;
+          margin-top: -40px;
+
+          .card-text {
+            font-size: 18px;
+            line-height: 18px;
+          }
+        }
+      }
+
+      // akhir info 2
+
+    }
+
+
+    // Testimoni
+    #testimoni {
+      margin-top: 150px;
+
+      h1 {
+        font-weight: bold;
+        font-size: 60px;
+        line-height: 65px;
+        text-align: center;
+      }
+
+      img.small-hero {
+        margin-top: 100px;
+        position: relative;
+        z-index: 1;
+
+      }
+
+      .card.testimoni {
+        height: 470px;
+        background-color: #031f4b;
+        position: relative;
+        top: -350px;
+        left: 0;
+        z-index: -1;
+
+        .card-body {
+          padding-top: 15%;
+
+          h2,
+          p {
+            color: white;
+          }
+
+          h2 {
+            font-size: 40px;
+            margin-left: 180px;
+          }
+
+          p {
+            margin-left: 180px;
+            font-size: 20px;
+            line-height: 25px;
+          }
+
+          .card-members {
+            width: 400px;
+            height: 100px;
+
+            margin-left: 180px;
+            margin-top: 50px;
+            padding: 20px;
+
+            h5 {
+              font-weight: normal;
+              font-size: 18px;
+              color: white;
+              margin-top: -50px;
+              margin-left: 60px;
+            }
+
+            p {
+              font-size: 13px;
+              margin-left: 60px;
+            }
+          }
+        }
+      }
+    }
+
+
+    // akhir testimoni
+
+    //   Daftar harga
+    #harga {
+      margin-top: -150px;
+
+      h1 {
+        font-weight: bold;
+        font-size: 60px;
+        line-height: 65px;
+        text-align: center;
+      }
+
+      #hargaProduk {
+        .col-lg-4 .card {
+          margin-top: 100px;
+          border: none;
+          opacity: 0.75;
+          margin-left: 45px;
+
+          .card-body {
+            background-color: #031f4b;
+            width: 250px;
+            height: 120px;
+            border-radius: 10px;
+            box-shadow: 3px 3px 10px rgba($color: #000000, $alpha: 0.4);
+            margin-top: -40px;
+
+            .card-text {
+              font-size: 18px;
+              line-height: 18px;
+              color: white;
+            }
+
+            .btn {
+              width: 120px;
+              height: 30px;
+              border-radius: 10px;
+              background-color: white;
+              color: #031f4b;
+              font-size: 15px;
+              line-height: 10px;
+            }
+          }
+        }
+
+        .card:hover {
+          opacity: 1;
+          transform: scale(1.02);
+          transition: 0.3s;
+        }
+      }
+    }
+
+
+
+    // akhir daftar harga
+  }
+
+  // akhir main
+
+  // Footer
+  footer {
+    background-image: linear-gradient(to bottom, (#035b96, #04396c));
+
+    padding: 50px;
+
+    .about {
+      .col-lg-1 {
+        img {
+          margin-top: 25px;
+        }
+      }
+
+      .col-lg-6 {
+        p {
+          color: white;
+          font-size: 20px;
+          margin-top: 35px;
+        }
+      }
+    }
+
+    .social-media {
+      margin-top: 100px;
+
+      img {
+        margin-right: 40px;
+      }
+    }
+
+    hr {
+      margin-top: 25px;
+      border: 1px solid white;
+    }
+
+    p.copyright {
+      font-size: 20px;
+      color: white;
+      text-align: center;
+      margin-top: 40px;
+    }
+  }
+
+  // akhir footer
+}

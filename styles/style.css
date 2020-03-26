@@ -1,0 +1,691 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+* h1,
+* h2,
+* h3,
+* h4,
+* h5 {
+  font-family: "Titillium Web";
+  color: #031f4b;
+  font-weight: bold;
+}
+
+* p,
+* a,
+* li {
+  font-family: "Montserrat";
+  color: #031f4b;
+  font-weight: normal;
+}
+
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+  header {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#035b96), to(#04396c));
+    background-image: linear-gradient(to bottom, #035b96, #04396c);
+    height: 120vh;
+  }
+  header nav {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 20px;
+  }
+  header nav .navbar-brand {
+    margin-right: 190px;
+  }
+  header nav .navbar-toggler .navbar-toggler-icon {
+    background-image: url("../asset/icon/Menu Icon.png");
+    background-size: contain;
+  }
+  header nav .navbar-collapse {
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  header nav .navbar-collapse .navbar-nav {
+    margin-top: 10px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    padding: 15px;
+    z-index: 99;
+    background-color: #035b96;
+    border: 2px solid white;
+    border-radius: 10px;
+  }
+  header nav .navbar-collapse a.nav-menu {
+    margin-left: 120px;
+  }
+  header nav .navbar-collapse a.nav-menu .hamburger {
+    display: none;
+  }
+  header nav .navbar-collapse a.nav-item {
+    color: white !important;
+    font-weight: normal;
+    margin-right: 70px;
+  }
+  header nav .navbar-collapse a.nav-item.active {
+    font-weight: bold;
+  }
+  header .jumbotron.one {
+    background-color: transparent;
+  }
+  header .jumbotron.one h1,
+  header .jumbotron.one p,
+  header .jumbotron.one button {
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.6);
+    color: white;
+    position: relative;
+    z-index: 1;
+  }
+  header .jumbotron.one p {
+    font-size: 18px;
+    line-height: 25px;
+    margin-top: 20px;
+  }
+  header .jumbotron.one h1 {
+    font-size: 60px;
+    font-weight: bold;
+    line-height: 70px;
+  }
+  header .jumbotron.one button {
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-left: 15%;
+  }
+  header .jumbotron.one button a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+  }
+  header .jumbotron.one .hero-image {
+    position: relative;
+    margin-top: -400px;
+  }
+  header .jumbotron.one .hero-image img {
+    display: none;
+  }
+  header section .container {
+    width: 330px;
+    background-color: white;
+    border-radius: 20px;
+    -webkit-box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.5);
+            box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.5);
+    position: relative;
+    z-index: 1;
+    top: 400px;
+  }
+  header section .container .information-item {
+    padding: 20px;
+  }
+  header section .container .information-item .available,
+  header section .container .information-item .members,
+  header section .container .information-item .sold {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 30px;
+  }
+  header section .container .information-item .available img,
+  header section .container .information-item .members img,
+  header section .container .information-item .sold img {
+    width: 80px;
+    height: 80px;
+    margin-right: auto;
+  }
+  header section .container .information-item .available h1,
+  header section .container .information-item .members h1,
+  header section .container .information-item .sold h1 {
+    font-size: 50px;
+    font-weight: bold;
+  }
+  main .container {
+    width: 90%;
+    -webkit-box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.5);
+            box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.5);
+    padding-top: 250px;
+    height: 900vh;
+  }
+  main .container #info1 {
+    margin-top: 200px;
+  }
+  main .container #info1 h1 {
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 45px;
+    text-align: center;
+  }
+  main .container .carousel.slide {
+    margin-top: 40px;
+    height: 900px !important;
+  }
+  main .container .carousel.slide .col-lg-6 {
+    margin-top: 0px;
+  }
+  main .container .carousel.slide .col-lg-6 .text-content {
+    padding: 10px;
+  }
+  main .container .carousel.slide .col-lg-6 .text-content p {
+    font-size: 15px;
+  }
+  main .container .carousel.slide .col-lg-6 .text-content p.head {
+    font-weight: bold;
+  }
+  main .container .carousel.slide .col-lg-5.offset-1.one img {
+    margin-top: 20px;
+    margin-left: -20px;
+    width: 100%;
+  }
+  main .container .carousel.slide .col-lg-5.offset-1.two img {
+    margin-top: 20px;
+    margin-left: 25px;
+    width: 80%;
+    height: 400px;
+  }
+  main .container .carousel.slide .carousel-indicators img {
+    margin-right: 20px;
+    margin-top: -10px;
+  }
+  main .container #info2 {
+    margin-top: 200px;
+  }
+  main .container #info2 h1 {
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 45px;
+    text-align: center;
+  }
+  main .container .col-lg-4 .card {
+    margin-top: 100px;
+    border: none;
+    margin-left: 15px;
+    width: 400px;
+  }
+  main .container .col-lg-4 .card .card-body {
+    background-color: white;
+    width: 250px;
+    height: 80px;
+    border-radius: 10px;
+    -webkit-box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
+    margin-left: 75px;
+    margin-top: -40px;
+  }
+  main .container .col-lg-4 .card .card-body .card-text {
+    font-size: 18px;
+    line-height: 18px;
+  }
+  main .container #testimoni .testimoni {
+    margin-top: 150px;
+    margin-bottom: 0;
+  }
+  main .container #testimoni .testimoni h1 {
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 45px;
+    text-align: center;
+  }
+  main .container #testimoni img.small-hero {
+    display: none;
+  }
+  main .container #testimoni .card.testimoni {
+    background-color: #031f4b;
+    position: relative;
+    left: -98px;
+    width: 400px;
+  }
+  main .container #testimoni .card.testimoni .card-body {
+    padding-top: 15%;
+    margin-left: -180px;
+  }
+  main .container #testimoni .card.testimoni .card-body h2,
+  main .container #testimoni .card.testimoni .card-body p {
+    color: white;
+    text-align: center;
+  }
+  main .container #testimoni .card.testimoni .card-body h2 {
+    font-size: 30px;
+    margin-left: 180px;
+  }
+  main .container #testimoni .card.testimoni .card-body p {
+    margin-left: 180px;
+    font-size: 15px;
+    line-height: 25px;
+  }
+  main .container #testimoni .card.testimoni .card-body .card-members {
+    width: 400px;
+    height: 100px;
+    margin-left: 210px;
+    margin-top: 50px;
+    padding: 20px;
+  }
+  main .container #testimoni .card.testimoni .card-body .card-members h5 {
+    font-weight: normal;
+    font-size: 18px;
+    color: white;
+    margin-top: -45px;
+    margin-left: 60px;
+  }
+  main .container #testimoni .card.testimoni .card-body .card-members p {
+    font-size: 13px;
+    margin-left: -150px;
+    margin-top: -10px;
+  }
+  main .container #harga {
+    margin-top: 150px;
+  }
+  main .container #harga h1 {
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 45px;
+    text-align: center;
+  }
+  main .container #hargaProduk .col-lg-4 .card {
+    margin-top: 100px;
+    border: none;
+    opacity: 0.75;
+    width: 50%;
+    margin-left: 50px;
+  }
+  main .container #hargaProduk .col-lg-4 .card .card-body {
+    background-color: #031f4b;
+    width: 250px;
+    height: 120px;
+    border-radius: 10px;
+    -webkit-box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
+    margin-left: 50px;
+    margin-top: -40px;
+  }
+  main .container #hargaProduk .col-lg-4 .card .card-body .card-text {
+    font-size: 18px;
+    line-height: 18px;
+    color: white;
+  }
+  main .container #hargaProduk .col-lg-4 .card .card-body .btn {
+    width: 120px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: white;
+    color: #031f4b;
+    font-size: 15px;
+    line-height: 10px;
+  }
+  main .container #hargaProduk .card:hover {
+    opacity: 1;
+    -webkit-transform: scale(1.02);
+            transform: scale(1.02);
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  footer {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#035b96), to(#04396c));
+    background-image: linear-gradient(to bottom, #035b96, #04396c);
+    margin-top: 0px;
+    padding: 30px;
+  }
+  footer .about .col-sm-1 img {
+    margin-top: 25px;
+    display: block;
+  }
+  footer .about .col-sm-6 p {
+    color: white;
+    font-size: 15px;
+    margin-top: 40px;
+    position: relative;
+    top: -195px;
+    left: 80px;
+  }
+  footer .social-media {
+    margin-top: -100px;
+  }
+  footer .social-media img {
+    margin-right: 40px;
+  }
+  footer hr {
+    margin-top: 25px;
+    border: 1px solid white;
+  }
+  footer p.copyright {
+    font-size: 15px;
+    color: white;
+    text-align: center;
+    margin-top: 40px;
+  }
+}
+
+@media (min-width: 768px) {
+  body {
+    height: 700vh;
+  }
+  header {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#035b96), to(#04396c));
+    background-image: linear-gradient(to bottom, #035b96, #04396c);
+    height: 135vh;
+  }
+  header nav {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 20px;
+  }
+  header nav .navbar-brand {
+    margin-right: 190px;
+  }
+  header nav a.nav-menu {
+    margin-left: 120px;
+  }
+  header nav a.nav-menu .hamburger {
+    float: left;
+  }
+  header nav a.nav-menu .hamburger div.two {
+    width: 40px;
+    height: 5px;
+    background-color: white;
+    border-radius: 3px;
+    margin-bottom: 4px;
+  }
+  header nav a.nav-menu .hamburger div.one,
+  header nav a.nav-menu .hamburger div.three {
+    width: 50%;
+    height: 5px;
+    background-color: white;
+    border-radius: 3px;
+    margin-bottom: 4px;
+  }
+  header nav a.nav-menu .hamburger div.one {
+    margin-left: 50%;
+  }
+  header nav a.nav-item {
+    color: white !important;
+    font-weight: normal;
+    margin-right: 70px;
+  }
+  header nav a.nav-item.active {
+    font-weight: bold;
+  }
+  header .jumbotron.one {
+    background-color: transparent;
+  }
+  header .jumbotron.one h1,
+  header .jumbotron.one p,
+  header .jumbotron.one button {
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.6);
+    color: white;
+    position: relative;
+    z-index: 1;
+  }
+  header .jumbotron.one p {
+    font-size: 27px;
+    line-height: 33px;
+    margin-top: 20px;
+    opacity: 1 !important;
+  }
+  header .jumbotron.one h1 {
+    font-size: 80px;
+    font-weight: bold;
+    line-height: 100px;
+  }
+  header .jumbotron.one button {
+    width: 200px;
+    height: 50px;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-left: 35%;
+  }
+  header .jumbotron.one button a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  header .jumbotron.one .hero-image {
+    position: relative;
+    margin-top: -400px;
+  }
+  header .jumbotron.one .hero-image img {
+    position: absolute;
+    top: 100px;
+    left: -45px;
+    opacity: .4;
+  }
+  header section .container {
+    width: 720px;
+    height: 200px;
+    background-color: white;
+    border-radius: 20px;
+    -webkit-box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.5);
+            box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.5);
+    position: relative;
+    z-index: 1;
+    top: 490px;
+  }
+  header section .container .information-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  header section .container .information-item .available,
+  header section .container .information-item .members,
+  header section .container .information-item .sold {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 50px;
+  }
+  header section .container .information-item .available h1,
+  header section .container .information-item .members h1,
+  header section .container .information-item .sold h1 {
+    font-size: 70px;
+    font-weight: bold;
+  }
+  main .container {
+    height: 600vh;
+    -webkit-box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.5);
+            box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.5);
+    padding-top: 250px;
+  }
+  main .container #info1 h1 {
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 65px;
+    text-align: center;
+  }
+  main .container #info1 .carousel.slide {
+    margin-top: 70px;
+    height: 650px !important;
+  }
+  main .container #info1 .carousel.slide .col-lg-6 {
+    margin-top: 100px;
+  }
+  main .container #info1 .carousel.slide .col-lg-6 .text-content {
+    margin-top: 10%;
+    margin-left: 30px;
+  }
+  main .container #info1 .carousel.slide .col-lg-6 .text-content p {
+    font-size: 20px;
+  }
+  main .container #info1 .carousel.slide .col-lg-6 .text-content p.head {
+    font-weight: bold;
+  }
+  main .container #info1 .carousel.slide .col-lg-5.offset-1.one img {
+    margin-top: 80px;
+    margin-left: -30px;
+  }
+  main .container #info1 .carousel.slide .col-lg-5.offset-1.two img {
+    margin-top: 80px;
+    margin-left: 80px;
+  }
+  main .container #info1 .carousel.slide .carousel-indicators img {
+    margin-right: 20px;
+  }
+  main .container #info2 {
+    margin-top: 200px;
+  }
+  main .container #info2 h1 {
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 65px;
+    text-align: center;
+  }
+  main .container #info2 .col-lg-4 .card {
+    margin-top: 100px;
+    border: none;
+    margin-left: 5px;
+  }
+  main .container #info2 .col-lg-4 .card .card-body {
+    background-color: white;
+    width: 250px;
+    height: 80px;
+    border-radius: 10px;
+    -webkit-box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
+    margin-left: 50px;
+    margin-top: -40px;
+  }
+  main .container #info2 .col-lg-4 .card .card-body .card-text {
+    font-size: 18px;
+    line-height: 18px;
+  }
+  main .container #testimoni {
+    margin-top: 150px;
+  }
+  main .container #testimoni h1 {
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 65px;
+    text-align: center;
+  }
+  main .container #testimoni img.small-hero {
+    margin-top: 100px;
+    position: relative;
+    z-index: 1;
+  }
+  main .container #testimoni .card.testimoni {
+    height: 470px;
+    background-color: #031f4b;
+    position: relative;
+    top: -350px;
+    left: 0;
+    z-index: -1;
+  }
+  main .container #testimoni .card.testimoni .card-body {
+    padding-top: 15%;
+  }
+  main .container #testimoni .card.testimoni .card-body h2,
+  main .container #testimoni .card.testimoni .card-body p {
+    color: white;
+  }
+  main .container #testimoni .card.testimoni .card-body h2 {
+    font-size: 40px;
+    margin-left: 180px;
+  }
+  main .container #testimoni .card.testimoni .card-body p {
+    margin-left: 180px;
+    font-size: 20px;
+    line-height: 25px;
+  }
+  main .container #testimoni .card.testimoni .card-body .card-members {
+    width: 400px;
+    height: 100px;
+    margin-left: 180px;
+    margin-top: 50px;
+    padding: 20px;
+  }
+  main .container #testimoni .card.testimoni .card-body .card-members h5 {
+    font-weight: normal;
+    font-size: 18px;
+    color: white;
+    margin-top: -50px;
+    margin-left: 60px;
+  }
+  main .container #testimoni .card.testimoni .card-body .card-members p {
+    font-size: 13px;
+    margin-left: 60px;
+  }
+  main .container #harga {
+    margin-top: -150px;
+  }
+  main .container #harga h1 {
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 65px;
+    text-align: center;
+  }
+  main .container #harga #hargaProduk .col-lg-4 .card {
+    margin-top: 100px;
+    border: none;
+    opacity: 0.75;
+    margin-left: 45px;
+  }
+  main .container #harga #hargaProduk .col-lg-4 .card .card-body {
+    background-color: #031f4b;
+    width: 250px;
+    height: 120px;
+    border-radius: 10px;
+    -webkit-box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
+    margin-top: -40px;
+  }
+  main .container #harga #hargaProduk .col-lg-4 .card .card-body .card-text {
+    font-size: 18px;
+    line-height: 18px;
+    color: white;
+  }
+  main .container #harga #hargaProduk .col-lg-4 .card .card-body .btn {
+    width: 120px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: white;
+    color: #031f4b;
+    font-size: 15px;
+    line-height: 10px;
+  }
+  main .container #harga #hargaProduk .card:hover {
+    opacity: 1;
+    -webkit-transform: scale(1.02);
+            transform: scale(1.02);
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  footer {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#035b96), to(#04396c));
+    background-image: linear-gradient(to bottom, #035b96, #04396c);
+    padding: 50px;
+  }
+  footer .about .col-lg-1 img {
+    margin-top: 25px;
+  }
+  footer .about .col-lg-6 p {
+    color: white;
+    font-size: 20px;
+    margin-top: 35px;
+  }
+  footer .social-media {
+    margin-top: 100px;
+  }
+  footer .social-media img {
+    margin-right: 40px;
+  }
+  footer hr {
+    margin-top: 25px;
+    border: 1px solid white;
+  }
+  footer p.copyright {
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    margin-top: 40px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
