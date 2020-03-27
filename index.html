@@ -1,369 +1,496 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jakarta Estate</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Jakarta Estate</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="libraries/Bootstrap 4/css/bootstrap.min.css" />
 
-  <!-- Bootstrap -->
-  <link rel="stylesheet" href="libraries/Bootstrap 4/css/bootstrap.min.css" />
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="./libraries/AOS js/aos.css" />
 
-  <!-- AOS CSS -->
-  <link rel="stylesheet" href="./libraries/AOS js/aos.css">
+    <!-- My CSS -->
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
 
-  <!-- My CSS -->
-  <link rel="stylesheet" href="styles/style.css" />
-</head>
+  <body>
+    <div class="wrapper"></div>
 
-<body>
-  <!-- Header -->
+    <!-- Header -->
 
-  <header>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg">
-      <div class="container">
-        <a class="navbar-brand" href="#">
-          <img src="asset/icon/Group 14.png" alt="Jakarta Estate" srcset="" />
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav mx-auto text-uppercase">
-            <a class="nav-item nav-link active" href="#">Home</a>
-            <a class="nav-item nav-link" href="#">Showcase</a>
-            <a class="nav-item nav-link" href="#">Services</a>
-            <a class="nav-item nav-link" href="#">About</a>
-            <a class="nav-menu nav-link" href="#">
-              <div class="hamburger">
-                <div class="one"></div>
-                <div class="two"></div>
-                <div class="three"></div>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-    </nav>
-    <!-- akhir navbar -->
-
-    <!-- Jumbotron -->
-
-    <div class="jumbotron jumbotron-fluid one">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 offset-2" data-aos="fade-up" data-aos-duration="1000">
-            <h1 class="display-3">Hunian Apartemen</h1>
-            <h1 class="display-3">Terbaik di Jakarta</h1>
-            <div class="row">
-              <div class="col-lg-11 offset-1" data-aos="fade-down" data-aos-duration="1200">
-                <p class="lead">
-                  Temukan properti yang anda inginkan dengan berbagai macam
-                  fasilitas yang mumpuni di Kota Jakarta
-                </p>
-              </div>
-            </div>
-
-            <button class="btn btn-primary" data-aos="zoom-in" data-aos-duration="500">
-              <a href="">Cari Sekarang</a>
-            </button>
-
-            <div class="hero-image">
-              <img src="asset/images/house 1.png" alt="Apartment" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- akhir jumbotron -->
-
-    <!-- Information Box -->
-    <section class="information-box">
-      <div class="container">
-        <div class="information-item">
-          <div class="available">
-            <img src="asset/icon/building.png" />
-            <h1 class="ml-3" id="building">0</h1>
-          </div>
-          <div class="members">
-            <img src="asset/icon/people.png" />
-            <h1 class="ml-3" id="members">20</h1>
-          </div>
-          <div class="sold">
-            <img src="asset/icon/sold.png" />
-            <h1 class="ml-3" id="sold">5</h1>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- akhir information box -->
-  </header>
-
-  <!-- akhir header -->
-
-  <!-- Main -->
-
-  <main>
-    <div class="container">
-      <section id="info1">
-        <div class="row">
-          <!-- Info 1 -->
-          <!-- Header -->
-          <div class="col-lg-12" id="infoSatu" data-aos="fade-left" data-aos-duration="1000">
-            <h1 class="display-5">Membeli properti</h1>
-            <h1 class="display-5">menjadi mudah</h1>
-          </div>
-
-          <!-- Carousel -->
-          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="4000"
-            data-aos="zoom-in" data-aos-duration="1200">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <div class="row">
-                  <div class="col-lg-6">
-                    <div class="text-content">
-                      <p class="head">
-                        Lorem ipsum dolor sit amet consectetur adipisicing
-                        elit. Ratione dolor repellat con iste reiciendis fugit
-                        similique possimus.
-                      </p>
-                      <p class="main">
-                        Lorem ipsum dolor sit amet consectetur adipisicing
-                        elit. Ratione dolor repellat conse ctetur iste
-                        reiciendis fugit similique possimus repel lendus harum
-                        veritatis modi perferendis numquam officia quod
-                        adipisci nihil, magni sint. Dicta animi ex officia
-                      </p>
-                      <p class="end">
-                        Lorem ipsum dolor sit amet consectetur adipisicing
-                        elit. Ratione dolor repellat consectetur iste
-                        reiciendis fugit similique possimus
-                      </p>
-                    </div>
-                  </div>
-                  <div class="col-lg-5 offset-1 one">
-                    <img src="asset/images/pixasquare-4ojhpgKpS68-unsplash.png" alt="" srcset="" />
-                  </div>
+    <header>
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="asset/icon/Group 14.png" alt="Jakarta Estate" srcset="" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav mx-auto text-uppercase">
+              <a class="nav-item nav-link active" href="#">Home</a>
+              <a class="nav-item nav-link" href="#">Showcase</a>
+              <a class="nav-item nav-link" href="#">Services</a>
+              <a class="nav-item nav-link" href="#">About</a>
+              <a class="nav-menu nav-link" href="#">
+                <div class="hamburger">
+                  <div class="one"></div>
+                  <div class="two"></div>
+                  <div class="three"></div>
                 </div>
-              </div>
-
-              <div class="carousel-item">
-                <div class="row">
-                  <div class="col-lg-6">
-                    <div class="text-content">
-                      <p class="head">
-                        Lorem ipsum dolor sit amet consectetur adipisicing
-                        elit. Ratione dolor repellat con iste reiciendis fugit
-                        similique possimus.
-                      </p>
-                      <p class="main">
-                        Lorem ipsum dolor sit amet consectetur adipisicing
-                        elit. Ratione dolor repellat conse ctetur iste
-                        reiciendis fugit similique possimus repel lendus harum
-                        veritatis modi perferendis numquam officia quod
-                        adipisci nihil, magni sint. Dicta animi ex officia
-                      </p>
-                      <p class="end">
-                        Lorem ipsum dolor sit amet consectetur adipisicing
-                        elit. Ratione dolor repellat consectetur iste
-                        reiciendis fugit similique possimus
-                      </p>
-                    </div>
-                  </div>
-                  <div class="col-lg-5 offset-1 two">
-                    <img src="asset/images/house 4.png" alt="" srcset="" />
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="carousel-indicators">
-              <img src="asset/icon/slider.png" alt="" data-target="#carouselExampleIndicators" data-slide-to="0"
-                class="active one" />
-              <img src="asset/icon/slider.png" alt="" data-target="#carouselExampleIndicators" data-slide-to="1"
-                class="active two" />
+              </a>
             </div>
           </div>
-          <!-- akhir info 1 -->
         </div>
-      </section>
+      </nav>
+      <!-- akhir navbar -->
 
-      <!-- Info 2 -->
-      <section id="info2">
-        <div class="row">
-          <!-- Header -->
-          <div class="col-lg-12" data-aos="fade-right" data-aos-duration="1000">
-            <h1 class="display-5">Lokasi yang strategis</h1>
-          </div>
+      <!-- Jumbotron -->
 
-          <!-- Card Info -->
+      <div class="jumbotron jumbotron-fluid one">
+        <div class="container">
           <div class="row">
-            <div class="col-lg-4" data-aos="fade-up" data-aos-duration="1000">
-              <div class="card">
-                <img class=" card-img-top" src="asset/images/airport.png" alt="Card image cap" />
-                <div class="card-body text-center">
-                  <h5 class="card-text">Bandara Soekarno - Hatta</h5>
-                  <h5 class="card-text">10 Menit</h5>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4" data-aos="fade-up" data-aos-duration="1100">
-              <div class="card">
-                <img class=" card-img-top" src="asset/images/mall.png" alt="Card image cap" />
-                <div class="card-body text-center">
-                  <h5 class="card-text">Mega Mall Pentagon</h5>
-                  <h5 class="card-text">5 Menit</h5>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4" data-aos="fade-up" data-aos-duration="1200">
-              <div class="card">
-                <img class=" card-img-top" src="asset/images/toll.png" alt="Card image cap" />
-                <div class="card-body text-center">
-                  <h5 class="card-text">Jalan Tol Cikunir</h5>
-                  <h5 class="card-text">7 Menit</h5>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- akhir info 2 -->
-
-      <section id="testimoni">
-        <div class="row">
-          <!-- Testimoni -->
-          <div class="col-lg-12 testimoni" data-aos="fade-left" data-aos-duration="1000">
-            <h1 class="display-5">Testimoni klien kami</h1>
-          </div>
-
-          <div class="row">
-            <div class="col-lg-4 offset-1">
-              <img src="asset/images/house 2.png" class="small-hero" />
-            </div>
-            <div class="col-lg-8 offset-3" data-aos="fade-right" data-aos-duration="1000">
-              <div class="card testimoni">
-                <div class="card-body">
-                  <h2 class="card-title">Pelayanan yang oke</h2>
-                  <p class="card-text">
-                    This is a wider card with supporting text below as a
-                    natural lead-in to additional content. This content is a
-                    little bit longer.
+            <div
+              class="col-lg-8 offset-2"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
+              <h1 class="display-3">Hunian Apartemen</h1>
+              <h1 class="display-3">Terbaik di Jakarta</h1>
+              <div class="row">
+                <div
+                  class="col-lg-11 offset-1"
+                  data-aos="fade-down"
+                  data-aos-duration="1200"
+                >
+                  <p class="lead">
+                    Temukan properti yang anda inginkan dengan berbagai macam
+                    fasilitas yang mumpuni di Kota Jakarta
                   </p>
-                  <div class="card-members">
-                    <img src="asset/images/bryant.png" class="profile" />
-                    <h5>Bryant Dawson Priyantoro</h5>
-                    <p>Businessman</p>
+                </div>
+              </div>
+
+              <button
+                class="btn btn-primary"
+                data-aos="zoom-in"
+                data-aos-duration="500"
+              >
+                <a href="">Cari Sekarang</a>
+              </button>
+
+              <div class="hero-image">
+                <img src="asset/images/house 1.png" alt="Apartment" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- akhir jumbotron -->
+
+      <!-- Information Box -->
+      <section class="information-box">
+        <div class="container">
+          <div class="information-item">
+            <div class="available">
+              <img src="asset/icon/building.png" />
+              <h1 class="ml-3" id="building">0</h1>
+            </div>
+            <div class="members">
+              <img src="asset/icon/people.png" />
+              <h1 class="ml-3" id="members">20</h1>
+            </div>
+            <div class="sold">
+              <img src="asset/icon/sold.png" />
+              <h1 class="ml-3" id="sold">5</h1>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- akhir information box -->
+    </header>
+
+    <!-- akhir header -->
+
+    <!-- Main -->
+
+    <main>
+      <div class="container">
+        <section id="info1">
+          <div class="row">
+            <!-- Info 1 -->
+            <!-- Header -->
+            <div
+              class="col-lg-12"
+              id="infoSatu"
+              data-aos="fade-left"
+              data-aos-duration="1000"
+            >
+              <h1 class="display-5">Membeli properti</h1>
+              <h1 class="display-5">menjadi mudah</h1>
+            </div>
+
+            <!-- Carousel -->
+            <div
+              id="carouselExampleIndicators"
+              class="carousel slide"
+              data-ride="carousel"
+              data-interval="4000"
+              data-aos="zoom-in"
+              data-aos-duration="1200"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div class="text-content">
+                        <p class="head">
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Ratione dolor repellat con iste reiciendis fugit
+                          similique possimus.
+                        </p>
+                        <p class="main">
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Ratione dolor repellat conse ctetur iste
+                          reiciendis fugit similique possimus repel lendus harum
+                          veritatis modi perferendis numquam officia quod
+                          adipisci nihil, magni sint. Dicta animi ex officia
+                        </p>
+                        <p class="end">
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Ratione dolor repellat consectetur iste
+                          reiciendis fugit similique possimus
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col-lg-5 offset-1 one">
+                      <img
+                        src="asset/images/pixasquare-4ojhpgKpS68-unsplash.png"
+                        alt=""
+                        srcset=""
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="carousel-item">
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div class="text-content">
+                        <p class="head">
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Ratione dolor repellat con iste reiciendis fugit
+                          similique possimus.
+                        </p>
+                        <p class="main">
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Ratione dolor repellat conse ctetur iste
+                          reiciendis fugit similique possimus repel lendus harum
+                          veritatis modi perferendis numquam officia quod
+                          adipisci nihil, magni sint. Dicta animi ex officia
+                        </p>
+                        <p class="end">
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Ratione dolor repellat consectetur iste
+                          reiciendis fugit similique possimus
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col-lg-5 offset-1 two">
+                      <img src="asset/images/house 4.png" alt="" srcset="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-indicators">
+                <img
+                  src="asset/icon/slider.png"
+                  alt=""
+                  data-target="#carouselExampleIndicators"
+                  data-slide-to="0"
+                  class="active one"
+                />
+                <img
+                  src="asset/icon/slider.png"
+                  alt=""
+                  data-target="#carouselExampleIndicators"
+                  data-slide-to="1"
+                  class="active two"
+                />
+              </div>
+            </div>
+            <!-- akhir info 1 -->
+          </div>
+        </section>
+
+        <!-- Info 2 -->
+        <section id="info2">
+          <div class="row">
+            <!-- Header -->
+            <div
+              class="col-lg-12"
+              data-aos="fade-right"
+              data-aos-duration="1000"
+            >
+              <h1 class="display-5">Lokasi yang strategis</h1>
+            </div>
+
+            <!-- Card Info -->
+            <div class="row">
+              <div
+                class="col-sm-12 col-md-8 col-lg-4"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+              >
+                <div class="card">
+                  <img
+                    class=" card-img-top"
+                    src="asset/images/airport.png"
+                    alt="Card image cap"
+                  />
+                  <div class="card-body text-center">
+                    <h5 class="card-text">Bandara Soekarno - Hatta</h5>
+                    <h5 class="card-text">10 Menit</h5>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="col-sm-12 col-md-8 col-lg-4"
+                data-aos="fade-up"
+                data-aos-duration="1100"
+              >
+                <div class="card">
+                  <img
+                    class=" card-img-top"
+                    src="asset/images/mall.png"
+                    alt="Card image cap"
+                  />
+                  <div class="card-body text-center">
+                    <h5 class="card-text">Mega Mall Pentagon</h5>
+                    <h5 class="card-text">5 Menit</h5>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="col-sm-12 col-md-8 col-lg-4"
+                data-aos="fade-up"
+                data-aos-duration="1200"
+              >
+                <div class="card">
+                  <img
+                    class=" card-img-top"
+                    src="asset/images/toll.png"
+                    alt="Card image cap"
+                  />
+                  <div class="card-body text-center">
+                    <h5 class="card-text">Jalan Tol Cikunir</h5>
+                    <h5 class="card-text">7 Menit</h5>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+        <!-- akhir info 2 -->
 
-      <section id="harga">
+        <section id="testimoni">
+          <div class="row">
+            <!-- Testimoni -->
+            <div
+              class="col-lg-12 testimoni"
+              data-aos="fade-left"
+              data-aos-duration="1000"
+            >
+              <h1 class="display-5">Testimoni klien kami</h1>
+            </div>
+
+            <div class="row">
+              <div class="col-lg-4 offset-1">
+                <img src="asset/images/house 2.png" class="small-hero" />
+              </div>
+              <div
+                class="col-lg-8 offset-3"
+                data-aos="fade-right"
+                data-aos-duration="1000"
+              >
+                <div class="card testimoni">
+                  <div class="card-body">
+                    <h2 class="card-title">Pelayanan yang oke</h2>
+                    <p class="card-text">
+                      This is a wider card with supporting text below as a
+                      natural lead-in to additional content. This content is a
+                      little bit longer.
+                    </p>
+                    <div class="card-members">
+                      <img src="asset/images/bryant.png" class="profile" />
+                      <h5>Bryant Dawson Priyantoro</h5>
+                      <p>Businessman</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="harga">
+          <div class="row">
+            <!-- Daftar Harga -->
+            <!-- Header -->
+            <div
+              class="col-lg-12"
+              data-aos="fade-right"
+              data-aos-duration="800"
+            >
+              <h1 class="display-5">Produk pilihan</h1>
+              <h1 class="display-5">dengan harga terbaik</h1>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="row" id="hargaProduk">
+              <div
+                class="col-lg-4"
+                data-aos="zoom-in"
+                data-aos-duration="900"
+                data-aos-delay="500"
+              >
+                <div class="card">
+                  <img
+                    class=" card-img-top"
+                    src="asset/images/price/house 5.png"
+                    alt="Card image cap"
+                  />
+                  <div class="card-body text-center">
+                    <h5 class="card-text">Apartemen Elizabeth</h5>
+                    <h5 class="card-text">Rp 3.500.000.000</h5>
+                    <a src="" class="btn">Cek Detail</a>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="col-lg-4"
+                data-aos="zoom-in"
+                data-aos-duration="1200"
+                data-aos-delay="500"
+              >
+                <div class="card">
+                  <img
+                    class=" card-img-top"
+                    src="asset/images/price/house 5.png"
+                    alt="Card image cap"
+                  />
+                  <div class="card-body text-center">
+                    <h5 class="card-text">Apartemen San Diego</h5>
+                    <h5 class="card-text">Rp 5.000.000.000</h5>
+                    <a src="" class="btn">Cek Detail</a>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="col-lg-4"
+                data-aos="zoom-in"
+                data-aos-duration="1500"
+                data-aos-delay="500"
+              >
+                <div class="card">
+                  <img
+                    class=" card-img-top"
+                    src="asset/images/house 2.png"
+                    alt="Card image cap"
+                  />
+                  <div class="card-body text-center">
+                    <h5 class="card-text">Apartemen Martin</h5>
+                    <h5 class="card-text">Rp 2.750.000.000</h5>
+                    <a src="" class="btn">Cek Detail</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- akhir daftar harga -->
+          </div>
+        </section>
+      </div>
+    </main>
+    <!-- akhir main -->
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
         <div class="row">
-          <!-- Daftar Harga -->
-          <!-- Header -->
-          <div class="col-lg-12" data-aos="fade-right" data-aos-duration="800">
-            <h1 class="display-5">Produk pilihan</h1>
-            <h1 class="display-5">dengan harga terbaik</h1>
+          <img
+            src="asset/images/price/logo-footer.png"
+            alt=""
+            class="logo-footer"
+          />
+        </div>
+
+        <div class="row mt-5 about">
+          <div
+            class="col-lg-1 col-sm-1"
+            data-aos="fade-left"
+            data-aos-duration="800"
+          >
+            <img src="asset/images/footer/googlemaps.png" />
+            <img src="asset/images/footer/telpon.png" />
+            <img src="asset/images/footer/email.png" />
           </div>
-
-          <!-- Card 2 -->
-          <div class="row" id="hargaProduk">
-            <div class="col-lg-4" data-aos="fade-up" data-aos-duration="900" data-aos-delay="500">
-              <div class="card">
-                <img class=" card-img-top" src="asset/images/price/house 5.png" alt="Card image cap" />
-                <div class="card-body text-center">
-                  <h5 class="card-text">Apartemen Elizabeth</h5>
-                  <h5 class="card-text">Rp 3.500.000.000</h5>
-                  <button class="btn">Cek Detail</button>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="500">
-              <div class="card">
-                <img class=" card-img-top" src="asset/images/price/house 5.png" alt="Card image cap" />
-                <div class="card-body text-center">
-                  <h5 class="card-text">Apartemen San Diego</h5>
-                  <h5 class="card-text">Rp 5.000.000.000</h5>
-                  <button class="btn">Cek Detail</button>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="500">
-              <div class="card">
-                <img class=" card-img-top" src="asset/images/house 2.png" alt="Card image cap" />
-                <div class="card-body text-center">
-                  <h5 class="card-text">Apartemen Martin</h5>
-                  <h5 class="card-text">Rp 2.750.000.000</h5>
-                  <button class="btn">Cek Detail</button>
-                </div>
-              </div>
-            </div>
+          <div
+            class="col-lg-6 col-sm-6"
+            data-aos="fade-right"
+            data-aos-duration="1000"
+          >
+            <p>Jl. MT Haryono, Cawang, Jakarta Timur</p>
+            <p>0895338732855</p>
+            <p>jakartaestate@gmail.com</p>
           </div>
-          <!-- akhir daftar harga -->
         </div>
-      </section>
-    </div>
-  </main>
-  <!-- akhir main -->
 
-  <!-- Footer -->
-  <footer>
-    <div class="container">
-      <div class="row">
-        <img src="asset/images/price/logo-footer.png" alt="" class="logo-footer" />
+        <div class="row">
+          <div
+            class="col-lg-3 social-media"
+            data-aos="zoom-in"
+            data-aos-duration="800"
+          >
+            <img src="asset/images/footer/facebook.png" alt="" />
+            <img src="asset/images/footer/twitter.png" alt="" />
+            <img src="asset/images/footer/instagram.png" alt="" />
+          </div>
+        </div>
+
+        <hr / data-aos="fade-left" data-aos-duration="800">
+        <p class="copyright">Copyrights Jakarta Estate. 2020</p>
       </div>
+    </footer>
 
-      <div class="row mt-5 about">
-        <div class="col-lg-1 col-sm-1" data-aos="fade-left" data-aos-duration="800">
-          <img src="asset/images/footer/googlemaps.png" />
-          <img src="asset/images/footer/telpon.png" />
-          <img src="asset/images/footer/email.png" />
-        </div>
-        <div class="col-lg-6 col-sm-6" data-aos="fade-right" data-aos-duration="1000">
-          <p>Jl. MT Haryono, Cawang, Jakarta Timur</p>
-          <p>0895338732855</p>
-          <p>jakartaestate@gmail.com</p>
-        </div>
-      </div>
+    <!-- akhir footer -->
 
-      <div class="row">
-        <div class="col-lg-3 social-media" data-aos="zoom-in" data-aos-duration="800">
-          <img src="asset/images/footer/facebook.png" alt="" />
-          <img src="asset/images/footer/twitter.png" alt="" />
-          <img src="asset/images/footer/instagram.png" alt="" />
-        </div>
-      </div>
+    <!-- JQuery -->
+    <script src="./libraries/Bootstrap 4/js/jquery-3.4.1.min.js"></script>
+    <!-- Bootstrap  -->
+    <script src="./libraries/Bootstrap 4/js/bootstrap.min.js"></script>
+    <!-- Animation On Scroll -->
+    <script src="./libraries/AOS js/aos.js"></script>
+    <!-- Count Up JS -->
+    <script src="./libraries/countUp.js-1.9.3/countUp.js"></script>
 
-      <hr / data-aos="fade-left" data-aos-duration="800">
-      <p class="copyright" data-aos="zoom-in" data-aos-duration="800">Copyrights Jakarta Estate. 2020</p>
-    </div>
-  </footer>
-
-  <!-- akhir footer -->
-
-  <!-- JQuery -->
-  <script src="./libraries/Bootstrap 4/js/jquery-3.4.1.min.js"></script>
-  <!-- Bootstrap  -->
-  <script src="./libraries/Bootstrap 4/js/bootstrap.min.js"></script>
-  <!-- Animation On Scroll -->
-  <script src="./libraries/AOS js/aos.js"></script>
-  <!-- Count Up JS -->
-  <script src="./libraries/countUp.js-1.9.3/countUp.js"></script>
-
-  <!-- My Script -->
-  <script src="scripts/script.js"></script>
-</body>
-
+    <!-- My Script -->
+    <script src="scripts/script.js"></script>
+  </body>
 </html>

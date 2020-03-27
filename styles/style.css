@@ -23,41 +23,23 @@
   font-weight: normal;
 }
 
-@media (max-width: 768px) {
-  body {
-    overflow-x: hidden;
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .wrapper {
+    overflow-x: hidden !important;
+    position: relative;
   }
   header {
     background-image: -webkit-gradient(linear, left top, left bottom, from(#035b96), to(#04396c));
     background-image: linear-gradient(to bottom, #035b96, #04396c);
-    height: 120vh;
-  }
-  header nav {
-    width: 100%;
-    height: 100px;
-    margin-bottom: 20px;
-  }
-  header nav .navbar-brand {
-    margin-right: 190px;
+    height: 100vh;
   }
   header nav .navbar-toggler .navbar-toggler-icon {
     background-image: url("../asset/icon/Menu Icon.png");
     background-size: contain;
   }
-  header nav .navbar-collapse {
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
-  }
   header nav .navbar-collapse .navbar-nav {
     margin-top: 10px;
-    position: absolute;
-    left: 0;
-    right: 0;
-    padding: 15px;
-    z-index: 99;
-    background-color: #035b96;
-    border: 2px solid white;
-    border-radius: 10px;
+    padding: 20px;
   }
   header nav .navbar-collapse a.nav-menu {
     margin-left: 120px;
@@ -75,6 +57,7 @@
   }
   header .jumbotron.one {
     background-color: transparent;
+    margin-top: 50px;
   }
   header .jumbotron.one h1,
   header .jumbotron.one p,
@@ -85,14 +68,14 @@
     z-index: 1;
   }
   header .jumbotron.one p {
-    font-size: 18px;
-    line-height: 25px;
+    font-size: 15px;
+    line-height: 18px;
     margin-top: 20px;
   }
   header .jumbotron.one h1 {
-    font-size: 60px;
+    font-size: 30px;
     font-weight: bold;
-    line-height: 70px;
+    line-height: 35px;
   }
   header .jumbotron.one button {
     width: 150px;
@@ -115,17 +98,17 @@
     display: none;
   }
   header section .container {
-    width: 330px;
+    width: 250px;
     background-color: white;
     border-radius: 20px;
     -webkit-box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.5);
             box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.5);
     position: relative;
     z-index: 1;
-    top: 400px;
+    top: 300px;
   }
   header section .container .information-item {
-    padding: 20px;
+    padding: 10px;
   }
   header section .container .information-item .available,
   header section .container .information-item .members,
@@ -133,19 +116,18 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-top: 30px;
+    margin-top: 20px;
   }
   header section .container .information-item .available img,
   header section .container .information-item .members img,
   header section .container .information-item .sold img {
-    width: 80px;
-    height: 80px;
+    width: 25%;
     margin-right: auto;
   }
   header section .container .information-item .available h1,
   header section .container .information-item .members h1,
   header section .container .information-item .sold h1 {
-    font-size: 50px;
+    font-size: 30px;
     font-weight: bold;
   }
   main .container {
@@ -153,15 +135,15 @@
     -webkit-box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.5);
             box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.5);
     padding-top: 250px;
-    height: 900vh;
+    height: 700vh;
   }
   main .container #info1 {
-    margin-top: 200px;
+    margin-top: -50px;
   }
   main .container #info1 h1 {
     font-weight: bold;
-    font-size: 40px;
-    line-height: 45px;
+    font-size: 30px;
+    line-height: 30px;
     text-align: center;
   }
   main .container .carousel.slide {
@@ -172,7 +154,7 @@
     margin-top: 0px;
   }
   main .container .carousel.slide .col-lg-6 .text-content {
-    padding: 10px;
+    padding: 5px;
   }
   main .container .carousel.slide .col-lg-6 .text-content p {
     font-size: 15px;
@@ -196,33 +178,36 @@
     margin-top: -10px;
   }
   main .container #info2 {
-    margin-top: 200px;
+    margin-top: 100px;
   }
   main .container #info2 h1 {
     font-weight: bold;
-    font-size: 40px;
-    line-height: 45px;
+    font-size: 30px;
+    line-height: 30px;
     text-align: center;
   }
-  main .container .col-lg-4 .card {
-    margin-top: 100px;
+  main .container .col-sm-12 .card {
+    margin-top: 50px;
     border: none;
-    margin-left: 15px;
-    width: 400px;
+    margin-left: 45px;
   }
-  main .container .col-lg-4 .card .card-body {
+  main .container .col-sm-12 .card img {
+    width: 80%;
+  }
+  main .container .col-sm-12 .card .card-body {
+    padding: 10px;
     background-color: white;
-    width: 250px;
-    height: 80px;
+    width: 150px;
+    height: 40px;
     border-radius: 10px;
     -webkit-box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
             box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
-    margin-left: 75px;
-    margin-top: -40px;
+    margin-left: 30px;
+    margin-top: -30px;
   }
-  main .container .col-lg-4 .card .card-body .card-text {
-    font-size: 18px;
-    line-height: 18px;
+  main .container .col-sm-12 .card .card-body .card-text {
+    font-size: 10px;
+    line-height: 6px;
   }
   main .container #testimoni .testimoni {
     margin-top: 150px;
@@ -230,8 +215,8 @@
   }
   main .container #testimoni .testimoni h1 {
     font-weight: bold;
-    font-size: 40px;
-    line-height: 45px;
+    font-size: 30px;
+    line-height: 35px;
     text-align: center;
   }
   main .container #testimoni img.small-hero {
@@ -240,8 +225,9 @@
   main .container #testimoni .card.testimoni {
     background-color: #031f4b;
     position: relative;
-    left: -98px;
-    width: 400px;
+    left: -78px;
+    width: 300px;
+    margin-top: 50px;
   }
   main .container #testimoni .card.testimoni .card-body {
     padding-top: 15%;
@@ -253,40 +239,40 @@
     text-align: center;
   }
   main .container #testimoni .card.testimoni .card-body h2 {
-    font-size: 30px;
+    font-size: 20px;
     margin-left: 180px;
   }
   main .container #testimoni .card.testimoni .card-body p {
     margin-left: 180px;
-    font-size: 15px;
-    line-height: 25px;
+    font-size: 12px;
+    line-height: 15px;
   }
   main .container #testimoni .card.testimoni .card-body .card-members {
-    width: 400px;
-    height: 100px;
-    margin-left: 210px;
+    width: 300px;
+    height: 80px;
+    margin-left: 180px;
     margin-top: 50px;
     padding: 20px;
   }
   main .container #testimoni .card.testimoni .card-body .card-members h5 {
     font-weight: normal;
-    font-size: 18px;
+    font-size: 15px;
     color: white;
     margin-top: -45px;
     margin-left: 60px;
   }
   main .container #testimoni .card.testimoni .card-body .card-members p {
-    font-size: 13px;
-    margin-left: -150px;
-    margin-top: -10px;
+    font-size: 12px;
+    margin-left: -60px;
+    margin-top: -5px;
   }
   main .container #harga {
-    margin-top: 150px;
+    margin-top: 100px;
   }
   main .container #harga h1 {
     font-weight: bold;
-    font-size: 40px;
-    line-height: 45px;
+    font-size: 30px;
+    line-height: 35px;
     text-align: center;
   }
   main .container #hargaProduk .col-lg-4 .card {
@@ -298,8 +284,8 @@
   }
   main .container #hargaProduk .col-lg-4 .card .card-body {
     background-color: #031f4b;
-    width: 250px;
-    height: 120px;
+    width: 180px;
+    height: 100px;
     border-radius: 10px;
     -webkit-box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
             box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
@@ -307,17 +293,17 @@
     margin-top: -40px;
   }
   main .container #hargaProduk .col-lg-4 .card .card-body .card-text {
-    font-size: 18px;
-    line-height: 18px;
+    font-size: 13px;
+    line-height: 13px;
     color: white;
   }
   main .container #hargaProduk .col-lg-4 .card .card-body .btn {
-    width: 120px;
-    height: 30px;
+    width: 100px;
+    height: 25px;
     border-radius: 10px;
     background-color: white;
     color: #031f4b;
-    font-size: 15px;
+    font-size: 13px;
     line-height: 10px;
   }
   main .container #hargaProduk .card:hover {
@@ -333,22 +319,27 @@
     margin-top: 0px;
     padding: 30px;
   }
+  footer .logo-footer {
+    width: 50%;
+  }
   footer .about .col-sm-1 img {
+    width: 10%;
     margin-top: 25px;
     display: block;
   }
   footer .about .col-sm-6 p {
     color: white;
-    font-size: 15px;
+    font-size: 12px;
     margin-top: 40px;
     position: relative;
-    top: -195px;
-    left: 80px;
+    top: -170px;
+    left: 60px;
   }
   footer .social-media {
     margin-top: -100px;
   }
   footer .social-media img {
+    width: 10%;
     margin-right: 40px;
   }
   footer hr {
@@ -363,7 +354,7 @@
   }
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 1025px) and (max-width: 1366px) {
   body {
     height: 700vh;
   }
@@ -455,7 +446,7 @@
     position: absolute;
     top: 100px;
     left: -45px;
-    opacity: .4;
+    opacity: 0.4;
   }
   header section .container {
     width: 720px;
